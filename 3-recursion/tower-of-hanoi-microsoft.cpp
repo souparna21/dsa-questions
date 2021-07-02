@@ -44,9 +44,9 @@ public:
 int main()
 {
 
-    int T;
-    cin >> T; //testcases
-    while (T--)
+    int t;
+    cin >> t; //testcases
+    while (t--)
     {
 
         int n;
