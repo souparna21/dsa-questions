@@ -44,7 +44,7 @@ bool isPrime(int n)
 
 void primeFactor(int n)
 {
-    for(int i=0; i<n; i++)
+    for(int i=0; i<=n; i++)
     {
         if(isPrime(i))
         {
@@ -95,7 +95,7 @@ void primeFactor(int n)
     }
     if(n > 1)
     {
-        cout << n;
+        cout << n ;
     }
     cout << endl;
 }
