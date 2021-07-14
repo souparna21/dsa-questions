@@ -11,5 +11,111 @@ INPUT: 7
 OUTPUT: 1 7
 */
 
-/* ----------------------Iterative solution(Eucledian Algorithm) --------------------*/ 
-       /*---Time complexity: O(min(a,b)), Space Complexity: O(1)----*/
+/* ----------------------Iterative solution --------------------*/ 
+       /*---Time complexity: O(n), Space Complexity: O(1)----*/
+/*
+#include <iostream>
+
+using namespace std;
+
+void allDivisors(int n)
+{
+    for(int i=1; i<=n; i++)
+    {
+        if(n % i == 0)
+        {
+               cout << i << " ";
+        }
+    }
+    cout << endl;
+}
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        int n;
+        cin >> n;
+        allDivisors(n);
+    }
+    return 0;
+}
+*/
+
+/* ----------------------Iterative solution --------------------*/ 
+       /*---Time complexity: O(sqrt(n)), Space Complexity: O(1)----*/
+/*
+#include <iostream>
+
+using namespace std;
+
+void allDivisors(int n)
+{
+    for(int i=1; i*i<=n; i++)
+    {
+        if(n % i == 0)
+        {
+            cout << i << " ";
+            if(n/i != i)
+            {
+                cout << n/i << " "; // require example 25
+            }
+        }
+    }
+    cout << endl;
+}
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        int n;
+        cin >> n;
+        allDivisors(n);
+    }
+    return 0;
+}
+*/
+
+/* ----------------------Iterative solution --------------------*/ 
+       /*---Time complexity: O(sqrt(n)), Space Complexity: O(1)----*/
+#include <iostream>
+
+using namespace std;
+
+void divisors(int n)
+{
+    int i;
+    for(i=1; i*i<n; i++)
+    {
+        if(n%i == 0)
+        {
+            cout << i << " ";
+        }
+    }
+    for( ; i>=1; i--)
+    {
+        if(n%i == 0)
+        {
+            cout << n/i << " ";
+        }
+    }
+    cout << endl;
+}
+
+int main()
+{
+    int t; 
+    cin >> t;
+    while(t--)
+    {
+        int n;
+        cin >> n;
+        divisors(n);
+    }
+    return 0;
+}
