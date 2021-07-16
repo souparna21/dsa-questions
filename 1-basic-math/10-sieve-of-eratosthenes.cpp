@@ -110,7 +110,7 @@ int main()
 }
 */
 
-/* --------------------------- Efficient solution(Sieve of Eatosthenes Algorithm) --------------------*/ 
+/* --------------------------- Efficient solution(Sieve of Eratosthenes Algorithm) --------------------*/ 
        /*---Time complexity: O(n*log.log(n)), Space Complexity: O(1)----*/
 
 #include <iostream>
