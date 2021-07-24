@@ -25,14 +25,14 @@ Node *insertAtBegin(Node *head, int x)
     return temp;
 }
 
-// void printList(Node *head)
-// {
-//     while(head != NULL)
-//     {
-//         cout << head->data << " ";
-//         head = head->next;
-//     }
-// }
+void printList(Node *head)
+{
+    while(head != NULL)
+    {
+        cout << head->data << " ";
+        head = head->next;
+    }
+}
 
 int main()
 {
@@ -40,6 +40,6 @@ int main()
     head = insertAtBegin(head, 30);
     head = insertAtBegin(head, 20);
     head = insertAtBegin(head, 10);
-    // printList(head);
+    printList(head);
     return 0;
 }
