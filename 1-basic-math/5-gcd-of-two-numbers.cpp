@@ -85,7 +85,7 @@ int main()
 }
 */
 
-/* ----------------------Iterative solution(Eucledian Algorithm) --------------------*/ 
+/* ----------------------recursive solution(Eucledian Algorithm) --------------------*/ 
        /*---Time complexity: O(log(min(a,b))), Space Complexity:----*/
 #include <iostream> 
 

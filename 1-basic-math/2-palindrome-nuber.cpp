@@ -1,5 +1,5 @@
 /*
-Find out if a number is palindrome or not(A dingle digit number is always a palindrome).
+Find out if a number is palindrome or not(A single digit number is always a palindrome).
 
 INPUT: 78987
 OUTPUT: YES
@@ -19,6 +19,7 @@ using namespace std;
 
 bool isPalindrome(long n)
 {
+    // if(n <= 9) return true;
     int reversedNumber = 0;
     int temp = n;
     while(temp != 0){

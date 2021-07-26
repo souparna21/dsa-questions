@@ -75,7 +75,7 @@ int main()
 */
 
 /* ---------------------- Mathematical solution(logarithmic) --------------------*/ 
-       /*---Time complexity: O(log(min(a,b))), Space Complexity: O(1)----*/
+       /*---Time complexity: O(log(min(a,b))), Space Complexity: ----*/
                     /*--Formula: a*b = gcd(a,b) * lcm(a,b)---*/
 #include <iostream> 
 
