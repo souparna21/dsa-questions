@@ -45,7 +45,7 @@ int main()
 */
 
 /* ----------------------Iterative solution --------------------*/ 
-       /*---Time complexity: O(sqrt(n)), Space Complexity: O(1)----*/
+/*-----Time complexity: O(sqrt(n)), Space Complexity: O(1)------*/
 /*
 #include <iostream>
 
@@ -76,6 +76,49 @@ int main()
         int n;
         cin >> n;
         allDivisors(n);
+    }
+    return 0;
+}
+*/
+
+/* ----------------------Iterative solution --------------------*/ 
+/*-----Time complexity: O(sqrt(n)), Space Complexity: O(n)------*/
+/*
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<int> divisorOf(int n)
+{
+    vector<int> result;
+    for(int i=1; i*i<=n; i++)
+    {
+        if(n%i == 0)
+        {
+            result.push_back(i);
+            if(n/i != i) result.push_back(n/i);
+        }
+    }
+    sort(result.begin(),result.end());
+    return result;
+}
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        int n;
+        cin >> n;
+        vector<int> ans = divisorOf(n);
+        for(auto x: ans)
+        {
+            cout << x << " ";
+        }
+        cout << endl;
     }
     return 0;
 }
