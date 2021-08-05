@@ -66,7 +66,7 @@ int main()
 */
 
 /* ---------------------- Sieve of Eratosthenes Algorithm --------------------*/ 
-       /*---Time complexity: O(n*log.log(n)), Space Complexity: O(1)----*/
+       /*---Time complexity: O(n*log.log(n)), Space Complexity: O(n)----*/
 /*
 #include <iostream>
 #include <vector>
@@ -111,7 +111,7 @@ int main()
 */
 
 /* --------------------------- Efficient solution(Sieve of Eratosthenes Algorithm) --------------------*/ 
-       /*---Time complexity: O(n*log.log(n)), Space Complexity: O(1)----*/
+       /*---Time complexity: O(n*log.log(n)), Space Complexity: O(n)----*/
 
 #include <iostream>
 #include <vector>
