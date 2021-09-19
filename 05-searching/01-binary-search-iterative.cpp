@@ -10,7 +10,7 @@ OUTPUT- 2
 INPUT- (5,10,15,25,35), x=20
 OUTPUT- -1
 */
-// for sorted array
+// for sorted array( Iterative approach - two pointer method)
 /* ----------------------- Time Complexity=O(logn) and auxulary space=O(1)------------------------ */
 #include <iostream>
 #include <vector>
