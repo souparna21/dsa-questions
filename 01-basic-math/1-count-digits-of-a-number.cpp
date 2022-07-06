@@ -57,7 +57,7 @@ int main()
 
 /* --------------- logarithmic Solution ---------------*/
 
-#include<iostream>
+#include<bits/stdc++.h>
 #include<cmath>
 
 using namespace std;
