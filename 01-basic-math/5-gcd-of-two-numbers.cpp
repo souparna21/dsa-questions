@@ -9,42 +9,7 @@ INPUT: a=100, b=200
 OUTPUT: 100
 */
 
-/* ----------------------Brutforce solution(Iterative) --------------------*/ 
-       /*---Time complexity: O(n), Space Complexity: O(1)----*/
-/*
-#include <iostream> 
 
-using namespace std;
-
-int gcd(int a, int b)
-{
-    int result = min(a,b);
-    while(result > 0)
-    {
-        if(a%result == 0 && b%result == 0)
-        {
-            break;
-        }
-        else
-        {
-            result--;
-        }
-    }
-    return result;
-}
-
-int main()
-{
-    int t,a,b;
-    cin >> t;
-    while(t--)
-    {
-        cin >> a >> b;
-        cout << gcd(a,b) << endl;
-    }
-    return 0;
-}
-*/
 
 /* ----------------------Iterative solution(Euclidian Algorithm) --------------------*/ 
        /*---Time complexity: O(min(a,b)), Space Complexity: O(1)----*/
