@@ -46,7 +46,7 @@ int main()
 }
 */
 
-/* ----------------------Iterative solution(Eucledian Algorithm) --------------------*/ 
+/* ----------------------Iterative solution(Euclidian Algorithm) --------------------*/ 
        /*---Time complexity: O(min(a,b)), Space Complexity: O(1)----*/
 /*
 Eucledian Algorithm: If b is smaller than a, then gcd(a,b)=gcd(a-b,b)
