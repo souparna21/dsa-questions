@@ -2,7 +2,6 @@
 Find the factorial of a number
 */
 
-
 /* ----------------------Recursive solution --------------------*/ 
        /*---Time complexity: O(n), Space Complexity: O(n)----*/
 /*
