@@ -1,4 +1,4 @@
-// Result of (x<<Y) = x*2^y
+// Result of (x<<Y) = floor(x*2^y)
 #include<iostream>
 
 using namespace std;
