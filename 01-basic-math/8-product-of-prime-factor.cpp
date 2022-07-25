@@ -93,6 +93,7 @@ void primeFactor(int n)
             n = n/i;
         }
     }
+    // It is for a corner case for the largest prime factor
     if(n > 1)
     {
         cout << n ;
@@ -113,7 +114,7 @@ int main()
 }
 */
 
-/* ----------------------Iterative solution(Eucledian Algorithm) --------------------*/ 
+/* ----------------------Iterative solution --------------------*/ 
        /*---Time complexity: 3 times less than O(sqrt(n)), Space Complexity: O(1)----*/
 #include <iostream> 
 

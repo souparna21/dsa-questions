@@ -67,6 +67,15 @@ int computePower(int a, int n)
         return temp*a;
     }
 }
+int computePower(int a, int n)
+// {
+//     // Base case
+//     if(n == 0)  return 1;
+//     // Recursive case
+//     int res = computePower(a, n/2);
+//     if(n%2) return res*res*a;
+//     else return res*res;
+// }
 
 int main()
 {
@@ -88,19 +97,34 @@ int main()
 
 using namespace std;
 
+// int computePower(int a, int n)
+// {
+//     int result = 1;
+//     while(n > 0)
+//     {
+//         if(n%2 != 0)
+//         {
+//             result = result*a;
+//         }
+//         a *= a;
+//         n /= 2;
+//     }
+//     return result;
+// }
+
 int computePower(int a, int n)
 {
-    int result = 1;
+    int res = 1;
     while(n > 0)
     {
-        if(n%2 != 0)
-        {
-            result = result*a;
-        }
+        // Check if the least significant bit is 0 or 1 and if 1 then do (res *= a)
+        if(n & 1)   res *= a;
+        // Keep multiplying the number to keep track
         a *= a;
-        n /= 2;
+        // Shift the while binary number a bit towards right side
+        n >>= 1;
     }
-    return result;
+    return res;
 }
 
 int main()
